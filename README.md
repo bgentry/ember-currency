@@ -1,15 +1,31 @@
 # Ember-currency
 
-This README outlines the details of collaborating on this Ember addon.
+[currency.js](https://github.com/scurker/currency.js) addon for Ember.
 
-## Installation
+## Usage
+
+* `npm install --save ember-currency`
+* `ember g ember-currency`
+
+```js
+import currency from 'currency';
+
+export default DS.Model.extend({
+  quantity: DS.attr('number'),
+  shareCost: DS.attr('number'),
+
+  value: function() {
+    return currency(this.get('shareCost')).multiply(this.get('quantity')).format();
+  }.property('quantity', 'shareCost'),
+})
+
+```
+
+## Development
 
 * `git clone` this repository
 * `npm install`
 * `bower install`
-
-## Running
-
 * `ember server`
 * Visit your app at http://localhost:4200.
 
