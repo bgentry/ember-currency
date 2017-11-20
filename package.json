@@ -2,24 +2,26 @@
   "name": "ember-currency",
   "version": "0.0.4",
   "description": "An ember-cli addon for currency.js.",
+  "keywords": [
+    "ember-addon"
+  ],
+  "license": "MIT",
+  "author": "Blake Gentry",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
   "scripts": {
-    "start": "ember server",
     "build": "ember build",
-    "test": "ember test"
+    "start": "ember server",
+    "test": "ember try:each"
   },
   "repository": "https://github.com/bgentry/ember-currency",
   "engines": {
     "node": ">= 4"
   },
-  "author": "",
-  "license": "MIT",
   "dependencies": {
-    "ember-cli-babel": "^6.0.0",
-    "phantomjs": "^2.1.7"
+    "ember-cli-babel": "^6.0.0"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
@@ -42,9 +44,6 @@
     "ember-welcome-page": "^3.0.0",
     "loader.js": "^4.2.3"
   },
-  "keywords": [
-    "ember-addon"
-  ],
   "ember-addon": {
     "configPath": "tests/dummy/config"
   }
