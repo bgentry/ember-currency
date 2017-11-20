@@ -1,7 +1,5 @@
-import Ember from 'ember';
+import Helper from '@ember/component/helper';
 import currencyjs from 'currency';
-
-const { Helper } = Ember;
 
 export function formatCurrency([value]) {
   return currencyjs(value).format();
