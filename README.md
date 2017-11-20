@@ -4,7 +4,7 @@
 
 ## Usage
 
-* `npm install --save ember-currency`
+* `ember install ember-currency`
 * `ember g ember-currency`
 
 ```js
@@ -38,4 +38,4 @@ export default DS.Model.extend({
 
 * `ember build`
 
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
